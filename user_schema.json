@@ -1,0 +1,28 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "User",
+  "description": "Schema for user documents in my Todo application",
+  "type": "object",
+  "properties": {
+    "created_time": {
+      "description": "The time the user was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "email": {
+      "description": "The user's email address",
+      "type": "string",
+      "format": "email"
+    },
+    "uid": {
+      "description": "The user's unique identifier",
+      "type": "string"
+    }
+  },
+  "required": [
+    "created_time",
+    "email",
+    "uid"
+  ]
+}
